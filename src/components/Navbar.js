@@ -15,10 +15,10 @@ class Navbar extends Component {
       <nav className='menu-wrapper'>
       <h1 className='logo'>React<img src={logo} alt="logo"></img></h1>
 
-      <ul>
+      <ul className='navbar'>
         {ItemMenu.map( (item,index) => {
           return(
-            <li key={index}>{item.title}</li>
+            <li key={index} className={item.cName}><a>{item.title}</a></li>
           )
         })}
       </ul>

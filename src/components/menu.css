@@ -19,27 +19,20 @@
     position: absolute;
 }
 
-.item-list{
+.navbar{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-basis: 100px;
     justify-content: flex-end;
-    
+    align-items: center;
+    list-style: none;
 }
+
+
 
 img{
     width: 50px;
     height: 50px;
 }
 
-.item-list li{
-    width: 100px;
-    padding-right: 10px;
-    padding-left: 10px;
-    background-color: red;
-}
-
-.item-list{
-    list-style: none;
+.nav-link{
+    height: 50px;
 }
