@@ -25,6 +25,11 @@
 .nav-link a{
     color: white;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-link a:hover{
+    font-size: 22px;
 }
 
 img{
