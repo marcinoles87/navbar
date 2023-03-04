@@ -20,7 +20,7 @@ class Navbar extends Component {
     })
    }
 
-   console.log(this.state.clicked)
+   
 
     return (
       <nav className='menu-wrapper'>
@@ -32,7 +32,7 @@ class Navbar extends Component {
       <ul className={this.state.clicked ?'navbar-item-active' : 'navbar-item-none'}>
         {ItemMenu.map( (item,index) => {
           return(
-            <li key={index} className={item.cName}><a href='#' >{item.title}</a></li>
+            <li key={index} className={item.cName}><a href={item.url}>{item.title}</a></li>
           )
         })}
       </ul>
