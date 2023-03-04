@@ -13,12 +13,13 @@ class Navbar extends Component {
 
     return (
       <nav className='menu-wrapper'>
+
       <h1 className='logo'>React<img src={logo} alt="logo"></img></h1>
 
-      <ul className='navbar'>
+      <ul className='navbar-item'>
         {ItemMenu.map( (item,index) => {
           return(
-            <li key={index} className={item.cName}><a>{item.title}</a></li>
+            <li key={index} className={item.cName}><a href='#'>{item.title}</a></li>
           )
         })}
       </ul>
