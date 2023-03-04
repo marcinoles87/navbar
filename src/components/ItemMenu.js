@@ -1,15 +1,22 @@
 
-import React from 'react'
+export const ItemMenu = [
+  {
+    title: 'Home',
+    url: '#',
+    cName : 'nav-link'
+  } ,
 
-export default function ItemMenu() {
-  return (
-    <div className='item-menu'>
-      <ul className='item-list'>
-        <li>Menu</li>
-        <li>About us</li>
-        <li>Product</li>
-        <li>Contact</li>
-      </ul>
-    </div>
-  )
-}
+  {
+    title: 'Product',
+    url: '#',
+    cName : 'nav-link'
+  } ,
+  
+  {
+    title: 'Contact',
+    url: '#',
+    cName : 'nav-link'
+  }
+]
+
+
