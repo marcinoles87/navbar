@@ -1,0 +1,33 @@
+.menu-wrapper{
+    width: 100vw;
+    height: auto;
+    color: white;
+    line-height: 50px;
+    background-color: rgb(41, 41, 190);
+}
+
+.menu-logo{
+    display:inline-block;
+    position: absolute;
+    top:0;
+    left: 10px;
+
+}
+
+.item-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 100px;
+    justify-content: flex-end;
+    
+}
+
+.item-list li{
+    width: 100px;
+    background-color: red;
+}
+
+.item-list{
+    list-style: none;
+}
