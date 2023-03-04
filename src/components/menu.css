@@ -8,13 +8,19 @@
 }
 
 
-.navbar-item{
+.navbar-item-active{
     width: 80vw;
     display: flex;
     justify-content:flex-end;
     align-items: flex-end;
     list-style: none;
 
+}
+
+.navbar-item-none{
+    
+    display: none;
+    
 }
 
 .nav-link{

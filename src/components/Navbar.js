@@ -10,7 +10,7 @@ import './menu.css'
 class Navbar extends Component {
  
     
-      state = { clicked : false}
+      state = { clicked : true}
 
   render() {
 
@@ -29,7 +29,7 @@ class Navbar extends Component {
 
       <i class={this.state.clicked ? 'fas fa-times ' : 'fas fa-bars'} onClick={handleOnClick}></i>
 
-      <ul className='navbar-item'>
+      <ul className={this.state.clicked ?'navbar-item-active' : 'navbar-item-none'}>
         {ItemMenu.map( (item,index) => {
           return(
             <li key={index} className={item.cName}><a href='#' >{item.title}</a></li>
