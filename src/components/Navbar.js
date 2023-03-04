@@ -27,7 +27,7 @@ class Navbar extends Component {
 
       <h1 className='logo'>React<img src={logo} alt="logo"></img></h1> 
 
-      <i class={this.state.clicked ? 'fa fas' : 'fa fas'} onClick={handleOnClick}></i>
+      <i class={this.state.clicked ? 'fas fa-times ' : 'fas fa-bars'} onClick={handleOnClick}></i>
 
       <ul className='navbar-item'>
         {ItemMenu.map( (item,index) => {
