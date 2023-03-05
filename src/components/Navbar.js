@@ -15,16 +15,14 @@ class Navbar extends Component {
   render() {
 
   const docWidth = document.querySelector('body')
+  console.log(docWidth)
   const wd = docWidth.offsetWidth
 
-
-  // if(wd < 300){
-
-  //   this.setState( {
-  //     clicked : false
-
-  //   })
-  // }
+  const extra = (e) => {
+  if(wd < 300){
+    e.preventDefault()
+    console.log('hide menu')
+  }}
 
   
    const handleOnClick = () => {
@@ -40,7 +38,7 @@ class Navbar extends Component {
 
       <h1 className='logo'>React<img src={logo} alt="logo"></img></h1> 
 
-      <i class={this.state.clicked ? 'fas fa-times ' : 'fas fa-bars'} onClick={handleOnClick}></i>
+      <i class={this.state.clicked ? 'fas fa-times ' : 'fas fa-bars'} onClick={handleOnClick} onChange={extra}></i>
 
       <ul className={this.state.clicked ?'navbar-item-active' : 'navbar-item-none'}>
         {ItemMenu.map( (item,index) => {
