@@ -10,26 +10,33 @@ import './menu.css'
 class Navbar extends Component {
  
     
-      state = { clicked : true}
+      state = { clicked : true ,
+                media : false
+      }
+
 
   render() {
 
   const docWidth = document.querySelector('body')
   console.log(docWidth)
   const wd = docWidth.offsetWidth
+  console.log(wd)
 
-  const extra = (e) => {
-  if(wd < 300){
-    e.preventDefault()
-    console.log('hide menu')
-  }}
+   
+  
+
+   const handleOnClick = () => {
+
+    if(wd < 300){
+    this.setState(  {
+      clicked :!this.state.clicked,
+      media : !this.state.media
+    })
+  }
+   }
+
 
   
-   const handleOnClick = () => {
-    this.setState(  {
-      clicked :!this.state.clicked
-    })
-   }
 
    
 
@@ -38,9 +45,10 @@ class Navbar extends Component {
 
       <h1 className='logo'>React<img src={logo} alt="logo"></img></h1> 
 
-      <i class={this.state.clicked ? 'fas fa-times ' : 'fas fa-bars'} onClick={handleOnClick} onChange={extra}></i>
+      <i class={this.state.clicked ? 'fas fa-times ' : 'fas fa-bars'} onClick={handleOnClick}></i>
 
-      <ul className={this.state.clicked ?'navbar-item-active' : 'navbar-item-none'}>
+
+      <ul className={this.state.clicked ?'navbar-item-active' : 'navbar-item-none'  }>
         {ItemMenu.map( (item,index) => {
           return(
             <li key={index} className={item.cName}><a href={item.url}>{item.title}</a></li>
