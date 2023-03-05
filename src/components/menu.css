@@ -46,7 +46,9 @@ img{
 
 @media (width < 350px) {
 
- 
+  .menu-wrapper{
+    flex-direction: column;
+  }
     .navbar-item-active{
         width: 100vw;
         display: flex;
