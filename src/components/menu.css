@@ -44,3 +44,21 @@ img{
     height: 50px;
 }
 
+@media (width < 350px) {
+
+ 
+    .navbar-item-active{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        
+    
+    }
+
+}
+
+
+
