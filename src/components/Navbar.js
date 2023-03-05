@@ -14,6 +14,15 @@ class Navbar extends Component {
 
   render() {
 
+  const docWidth = document.querySelector('body')
+  const wd = docWidth.offsetWidth
+  console.log(wd)
+
+  if(wd < 300){
+    this.setState( {
+      clicked : false
+    })
+  }
    const handleOnClick = () => {
     this.setState(  {
       clicked :!this.state.clicked
