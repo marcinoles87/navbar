@@ -46,6 +46,10 @@ img{
     height: 50px;
 }
 
+.nav-icon{
+    display: none;
+}
+
 
 
 @media (width < 350px) {
@@ -63,7 +67,7 @@ img{
         
     }
 
-    .navbar-item-media{
+    .navbar-item-media:{
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -71,6 +75,10 @@ img{
         left: -100vw;
         transition: 1s ease-in-out;
         
+    }
+
+    .nav-icon{
+        display: inline-block;
     }
 
 
