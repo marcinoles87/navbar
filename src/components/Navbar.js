@@ -35,9 +35,14 @@ class Navbar extends Component {
     let offSW = window.innerWidth
     console.log(offSW)
 
+    if(offSW < 350) {
+      document.body.style.backgroundColor = 'red'
+    }else(
+      document.body.style.backgroundColor = 'white'
+    )
+
   }
    
-
 
   
 
