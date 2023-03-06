@@ -16,6 +16,12 @@ export const ItemMenu = [
     title: 'Contact',
     url: '#',
     cName : 'nav-link'
+  } ,
+
+  {
+    title: 'About Us',
+    url: '#',
+    cName : 'nav-link'
   }
 ]
 
