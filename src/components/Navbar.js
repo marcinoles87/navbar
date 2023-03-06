@@ -11,19 +11,30 @@ class Navbar extends Component {
  
     
       state = { clicked : true ,
-                media : false
+                media : false,
+               
       }
 
 
   render() {
 
-   const handleOnClick = () => {
-
+   
     
-    this.setState(  {
-      clicked :!this.state.clicked,
-      media : !this.state.media
-    })
+
+   const handleOnClick = () => {
+        this.setState(  {
+          clicked :!this.state.clicked,
+          media : !this.state.media,
+          
+        })
+  }
+
+  const handleMove = (e) => {
+    
+    let x = e.clientX
+    let offSW = window.innerWidth
+    console.log(offSW)
+
   }
    
 
@@ -33,13 +44,15 @@ class Navbar extends Component {
    
 
     return (
-      <nav className='menu-wrapper'>
+      <nav className='menu-wrapper' onMouseMove={handleMove}>
 
       <h1 className='logo'>React<img src={logo} alt="logo"></img></h1> 
 
       <div className='nav-icon'>
       <i className={this.state.clicked ? 'fas fa-times ' : 'fas fa-bars'} onClick={handleOnClick}></i>
       </div>
+
+      
 
       <ul className={this.state.clicked ?'navbar-item-active' : 'navbar-item-none'  }>
         {ItemMenu.map( (item,index) => {
