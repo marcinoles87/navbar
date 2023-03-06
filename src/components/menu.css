@@ -70,18 +70,12 @@ img{
         align-items: center;
         list-style: none;
         
-    }
-
-    .navbar-item-media{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: -100vw;
-        transform: translate(100%,0);
-        transition: 1s ease-in-out;
         
     }
+
+   
+
+  
 
     .nav-icon{
         display: inline-block;

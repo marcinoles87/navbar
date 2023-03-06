@@ -58,7 +58,7 @@ class Navbar extends Component {
       </div>
 
       
-
+      <div className='navbars'>
       <ul className={this.state.clicked ?'navbar-item-active' : 'navbar-item-none'  }>
         {ItemMenu.map( (item,index) => {
           return(
@@ -66,6 +66,8 @@ class Navbar extends Component {
           )
         })}
       </ul>
+
+      </div>
     
   
   </nav>
