@@ -41,7 +41,7 @@
 
 .nav-link a:hover{
     
-    background-color: rgb(114, 114, 233); ;
+    background-color: rgb(114, 114, 233); 
     font-size: 22px;
 }
 
@@ -64,10 +64,12 @@ img{
     border:1px solid white;
     border-radius: 10px;
     background-color:rgb(160, 255, 83) ;
+    transition: 0.5s ease-in-out;
 }
 
 .btn:hover {
-    
+    background-color: rgb(114, 114, 233); 
+
 }
 
 
