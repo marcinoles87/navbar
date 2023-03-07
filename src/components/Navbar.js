@@ -67,8 +67,10 @@ class Navbar extends Component {
         })}
       </ul>
 
+      
+
       </div>
-    
+      <button className='btn'>Sign in</button>
   
   </nav>
     )
