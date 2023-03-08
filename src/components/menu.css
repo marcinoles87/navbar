@@ -87,17 +87,15 @@ img{
         align-items: center;
         list-style: none;
         transform: translateX(45px);
-        transition: 1s solid ease;
-        
-        
+    
     }
 
-    .navbar-item-none{
-       
-        
     
+
+    .navbar-item-none{
         transform: translateX(-150px);
         transition: 1s solid ease;
+        display: none;
         
     }
 
