@@ -81,12 +81,23 @@ img{
   }
     .navbar-item-active{
         width: 100vw;
-        display: flex;
+        display: inline-block;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         list-style: none;
+        transform: translateX(45px);
+        transition: 1s solid ease;
         
+        
+    }
+
+    .navbar-item-none{
+       
+        
+    
+        transform: translateX(-150px);
+        transition: 1s solid ease;
         
     }
 
