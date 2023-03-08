@@ -36,7 +36,7 @@ class Navbar extends Component {
     console.log(offSW)
 
     if(offSW < 350) {
-      document.body.style.backgroundColor = 'red'
+      document.body.style.backgroundColor = ' rgb(16, 16, 54)'
     }else(
       document.body.style.backgroundColor = 'white'
     )

@@ -5,6 +5,7 @@
     line-height: 50px;
     display: flex;
     background-color: rgb(41, 41, 190);
+    box-shadow: 5px 10px 10px rgb(107, 107, 255);
 }
 
 
